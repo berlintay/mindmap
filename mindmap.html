@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>((r) => {
+            setTimeout(r);
+          })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"<a href=\"#overview\">Psychogenic Shivers and ASMR: An Overview</a>","children":[{"content":"<a href=\"./psychogenic-shivers.md\">Psychogenic Shivers (Frisson)</a>","children":[{"content":"<a href=\"./psychogenic-shivers.md#definition\">Definition</a>","children":[],"payload":{"lines":"2,3"}},{"content":"<a href=\"./psychogenic-shivers.md#causes\">Causes</a>","children":[],"payload":{"lines":"3,4"}},{"content":"<a href=\"./psychogenic-shivers.md#physiological-response\">Physiological Response</a>","children":[],"payload":{"lines":"4,5"}},{"content":"<a href=\"./psychogenic-shivers.md#experience\">Experience</a>","children":[],"payload":{"lines":"5,6"}}],"payload":{"lines":"1,6"}},{"content":"<a href=\"./asmr.md\">ASMR (Autonomous Sensory Meridian Response)</a>","children":[{"content":"<a href=\"./asmr.md#definition\">Definition</a>","children":[],"payload":{"lines":"7,8"}},{"content":"<a href=\"./asmr.md#causes\">Causes</a>","children":[],"payload":{"lines":"8,9"}},{"content":"<a href=\"./asmr.md#physiological-response\">Physiological Response</a>","children":[],"payload":{"lines":"9,10"}},{"content":"<a href=\"./asmr.md#experience\">Experience</a>","children":[],"payload":{"lines":"10,11"}}],"payload":{"lines":"6,11"}},{"content":"<a href=\"./correlation.md\">Correlation Between Psychogenic Shivers and ASMR</a>","children":[],"payload":{"lines":"11,12"}},{"content":"<a href=\"./research-and-interest.md\">Research and Interest</a>","children":[],"payload":{"lines":"12,14"}}],"payload":{"lines":"0,14"}},null)</script>
+</body>
+</html>
